@@ -4,6 +4,8 @@ Brainly is a personal dashboard for collecting and organizing tweets, YouTube vi
 ---
 
 # 🧠 Brainly – Curate What Inspires You
+<img width="1166" alt="image" src="https://github.com/user-attachments/assets/48df4639-08b4-4e92-b1bc-a46f7526be2d" />
+
 
 Brainly is a personal content dashboard where you can collect and organize tweets, YouTube videos, and written thoughts — all in one place.
 
