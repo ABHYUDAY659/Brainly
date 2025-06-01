@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+# Brainly
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Brainly is a personal dashboard for collecting and organizing tweets, YouTube videos, and your own notes—all in one place. Secured with token-based authentication and backed by MongoDB for reliable storage, it lets you create shareable links for easy access or sharing. Built with Vite, React, TypeScript, and Tailwind CSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🧠 Brainly – Curate What Inspires You
+<img width="1166" alt="image" src="https://github.com/user-attachments/assets/48df4639-08b4-4e92-b1bc-a46f7526be2d" />
 
-## Expanding the ESLint configuration
+Brainly is a personal content dashboard where you can collect and organize tweets, YouTube videos, and written thoughts — all in one place.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Features
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🔐 Authentication
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* Supports:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+  * `/signup` – Register a new account.
+  * `/signin` – Log into your account.
+* Uses **token-based authentication** to manage user sessions securely.
+
+### 📂 Dashboard
+
+* `/dashboard` – Your personalized space to manage and view saved content.
+* Add content easily:
+
+  * 🐦 Tweets from Twitter
+  * 📺 YouTube videos
+  * ✏️ Written notes or thoughts
+* Organize what you want to **see**, **read**, or **revisit** later.
+
+### 🔗 Shareable Content
+
+* Every thought or brain you create has a **unique shareable link**, so you can:
+
+  * Share it with friends or on social media.
+  * Access it later.
+
+### 📺 Platform Support
+
+* **Twitter** embeds
+* **YouTube** embeds
+
+---
+
+## 🌐 Running Locally
+
+By default, the app runs on `http://localhost:3000`, which means:
+
+> ⚠️ This is only accessible on your **own computer**.
+
+### 🔧 Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/brainly.git
+
+# Navigate into the project
+cd brainly
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+
+# Open in browser
+http://localhost:3000
